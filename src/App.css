@@ -46,7 +46,7 @@ body {
 .profile-pic {
   width: 350px;
   margin-left: calc(50vw - 175px);
-  margin-top: calc(50vh - 175px);
+  margin-top: calc(50vh - 270px);
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid grey;
@@ -57,9 +57,9 @@ body {
 
 .description-wrapper {
   width: 100%;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 5px 0;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 .hi,
 .my-name,
@@ -136,7 +136,7 @@ body {
 .view-btn {
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .view-link {
   padding: 10px 0px 10px 15px;
