@@ -1,16 +1,15 @@
 import React from "react";
-import Resume from "../../images/resume.png";
-import { navList } from "../constants";
+import Resume from "../images/resume.png";
+import { navList } from "./constants";
 
 const NavBar = props => {
-  console.log(navList);
   return (
     <React.Fragment>
       <span className="navbar-show" onClick={() => props.toggleState()}>
         <i class="fas fa-bars" />
       </span>
       <div className={props.navShow ? "navbar-open" : "navbar-closed"}>
-        <nav class="navbar navbar-default" data-spy="affix">
+        <nav class="navbar navbar-default">
           <div id="myNavbar">
             <ul class="nav navbar-nav">
               <li className="nav-img">
@@ -39,5 +38,7 @@ const NavBar = props => {
     </React.Fragment>
   );
 };
-
+NavBar.defaultProps = {
+	navShow: false
+}
 export default NavBar;

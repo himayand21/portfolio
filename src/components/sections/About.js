@@ -25,12 +25,14 @@ const About = () => {
             data-aos-delay="100"
             data-aos-easing="ease-out"
           >
-            {stage.description.map(desc => (
-              <div className="description">
-                <span className="desc-value">{desc.value}</span>
-                <label className="desc-label">{desc.label}</label>
-              </div>
-            ))}
+            <div className="description-container">
+              {stage.description.map(desc => (
+                <div className="description">
+                  <span className="desc-value">{desc.value}</span>
+                  <label className="desc-label">{desc.label}</label>
+                </div>
+              ))}
+            </div>
           </div>
           <Image source={stage.image} />
         </div>
