@@ -49,3 +49,42 @@
     margin-top: 30px;
   }
 }
+
+@media only screen and (min-width: 910px) and (max-width: 1520px) {
+  .my-description-wrapper {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1520px) {
+  .my-description-wrapper {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 570px) and (max-width: 910px) {
+  .my-description-wrapper {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .my-description-wrapper {
+    width: 85%;
+  }
+  .hi {
+    font-size: 30px;
+  }
+  .my-name,
+  .my-description-wrapper {
+    font-size: 18px;
+  }
+  .himayan {
+    font-size: 20px;
+  }
+  .profile-pic {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  .my-profession {
+    font-size: 20px;
+  }
+}

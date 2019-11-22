@@ -13,10 +13,10 @@ body {
 .navbar {
   border-radius: 0;
   background: white;
-  border-right: solid 1px rgba(117, 117, 117, 1);
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 20;
   width: 241px;
   height: 100vh;
   overflow: scroll;
@@ -60,10 +60,9 @@ body {
   margin-top: calc(50vh - 270px);
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid grey;
-  -webkit-box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 30px 70px -20px rgba(0, 0, 0, 0.75);
 }
 
 .description-wrapper {
@@ -104,44 +103,6 @@ body {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 910px) and (max-width: 1520px) {
-  .my-description-wrapper {
-    width: 40%;
-  }
-}
-@media only screen and (min-width: 1520px) {
-  .my-description-wrapper {
-    width: 25%;
-  }
-}
-@media only screen and (min-width: 570px) and (max-width: 910px) {
-  .my-description-wrapper {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .my-description-wrapper {
-    width: 85%;
-  }
-  .hi {
-    font-size: 30px;
-  }
-  .my-name,
-  .my-description-wrapper {
-    font-size: 18px;
-  }
-  .himayan {
-    font-size: 20px;
-  }
-  .profile-pic {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-  }
-  .my-profession {
-    font-size: 20px;
-  }
-}
 .view-btn {
   width: 100%;
   text-align: center;
