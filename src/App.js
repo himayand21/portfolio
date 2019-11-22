@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
+import "./responsive.css";
 import { Home, NavBar } from "./components";
 
 class App extends Component {

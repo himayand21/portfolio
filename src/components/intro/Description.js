@@ -11,12 +11,12 @@ const Description = () => {
       <span className="hi">Hi there!</span>
       <br />
       <div className="my-intro-wrapper">
-        <span className="my-name">
+        <div className="my-name">
           I'm <span className="himayan">Himayan</span>.
-        </span>
+        </div>
         <div className="my-description-wrapper">
           I'm a{" "}
-          <span className="my-profession"> full-stack web developer</span>.
+          <span className="my-profession"> front-end web developer</span>.
         </div>
       </div>
     </div>

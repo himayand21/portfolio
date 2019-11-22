@@ -7,6 +7,7 @@
 
 body {
   background: rgb(240, 250, 252);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar {
@@ -18,6 +19,7 @@ body {
   left: 0;
   width: 241px;
   height: 100vh;
+  overflow: scroll;
 }
 .nav {
   padding: 0;
@@ -26,11 +28,20 @@ body {
 #nav-link {
   width: 240px;
   text-align: center;
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   padding-bottom: 0.5px;
   font-weight: 250;
   padding: 20px 0;
   font-size: 20px;
+  position: relative;
+  display: block;
+}
+#nav-link:hover {
+  cursor: pointer;
+  background: #cfebe5;
+}
+#nav-link.current-nav {
+  background: #98d3c6;
 }
 .intro,
 #projects,
@@ -65,13 +76,11 @@ body {
 .my-name,
 .my-description-wrapper {
   font-size: 46px;
-  color: black;
   font-weight: 100;
-  padding: 20px 80px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.486);
+  padding: 10px 80px;
 }
 .my-intro-wrapper {
-  padding-top: 30px;
+  padding-top: 20px;
   margin-bottom: 30px;
 }
 .my-name,
@@ -87,7 +96,7 @@ body {
   font-size: 28px;
 }
 .my-description-wrapper {
-  padding: 5px 0 28px 0;
+  padding: 5px 0 20px 0;
   margin: auto;
 }
 
@@ -146,7 +155,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   transition: 0.5s;
-  color: black !important;
+  color: rgb(50, 50, 50) !important;
 }
 
 .view-link:hover {
@@ -205,9 +214,6 @@ body {
   );
 }
 
-.navbar-default .navbar-nav > li > a {
-  border-right: solid 1px rgba(117, 117, 117, 1);
-}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus {
   background: rgb(160, 218, 216);
@@ -221,6 +227,7 @@ body {
 .navbar-default .navbar-nav > .social-media > a {
   border-width: 0px;
   padding: 15px 15px 10px 15px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
@@ -301,7 +308,9 @@ body {
   width: 40px;
   border-radius: 50px;
   text-align: center;
-  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s ease;
   z-index: 1;
 }
@@ -314,11 +323,11 @@ body {
 
 .navbar-closed .navbar {
   left: -241px;
-  transition: 0.5s ease-out;
+  transition: left 0.5s ease-out;
 }
 .navbar-open .navbar {
   left: 0;
-  transition: 0.5s ease-out;
+  transition: left 0.5s ease-out;
 }
 .title {
   font-size: 50px;
@@ -343,7 +352,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  border-right: 1px rgba(117, 117, 117, 0.603) solid;
+  border-right: 1px rgba(180, 180, 180, 0.603) solid;
   padding-right: 100px;
 }
 
@@ -352,25 +361,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-left: 1px rgba(117, 117, 117, 0.603) solid;
+  border-left: 1px rgba(180, 180, 180, 0.603) solid;
   padding-left: 100px;
 }
 
 .life-icons {
   position: absolute;
-  left: calc(50% - 75px);
+  left: calc(50% - 85px);
 }
+
 .icon-img {
-  -webkit-box-shadow: 0px 0px 0px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 0px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 20px -20px rgba(0, 0, 0, 0.75);
   background: white;
   border-radius: 50%;
   padding: 10px;
   z-index: 2;
-  -webkit-box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
 }
 
 .life-stage:last-child .life-description-right {
@@ -385,12 +392,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 10px 10px 20px;
+  padding: 10px;
   background: white;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 40px 70px -30px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
 }
 .description {
   width: 400px;

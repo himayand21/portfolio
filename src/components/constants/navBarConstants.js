@@ -1,19 +1,19 @@
 export const navList = {
     home: {
         label: "Home",
-        link: "#home"
+        link: "home"
     },
     skills: {
         label: "About",
-        link: "#about"
+        link: "about"
     },
     projects: {
         label: "Projects",
-        link: "#projects"
+        link: "projects"
     },
     contact: {
         label: "Contact",
-        link: "#contact"
+        link: "contact"
     },
     socialMedia: [{
             name: 'fab fa-linkedin icons',
@@ -29,3 +29,6 @@ export const navList = {
             link: ''
         }]
 }
+
+const navListValues = Object.values(navList);
+export const navIds = navListValues.filter(each => each.link).map(each => each.link);
