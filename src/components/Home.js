@@ -1,14 +1,14 @@
 import React from "react";
-import { Intro, About } from "./sections";
+import { Intro, About, Skills } from "./sections";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-class Home extends React.Component {
-  render() {
+const Home = () => {
     AOS.init();
     return (
       <React.Fragment>
         <Intro />
+        <Skills />
         <About />
         <div id="projects">
           <h1>Section 1</h1>
@@ -39,6 +39,5 @@ class Home extends React.Component {
       </React.Fragment>
     );
   }
-}
 
 export default Home;

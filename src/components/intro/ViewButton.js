@@ -1,5 +1,12 @@
 import React from "react";
 const ViewButton = () => {
+  const goToProjects = () => {
+    const element = document.getElementById('projects');
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: "smooth"
+    });
+  }
   return (
     <div
       className="view-btn item"
@@ -9,10 +16,10 @@ const ViewButton = () => {
       data-aos-offset="0"
       data-aos-easing="ease-out"
     >
-      <a className="view-link" href="#projects">
+      <button className="view-link" onClick={goToProjects}>
         View Projects
         <i class="fas fa-arrow-right"></i>
-      </a>
+      </button>
     </div>
   );
 };

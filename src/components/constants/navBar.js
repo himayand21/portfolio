@@ -4,8 +4,12 @@ export const navList = {
         link: "home"
     },
     skills: {
+        label: "Skills",
+        link: "skills"
+    },
+    about: {
         label: "About",
-        link: "about"
+        link: 'about'
     },
     projects: {
         label: "Projects",

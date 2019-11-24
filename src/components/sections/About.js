@@ -2,17 +2,13 @@ import React from "react";
 import { Image } from "../about";
 import { aboutConstants } from "../constants";
 
-const About = () => {
+export const About = () => {
   return (
     <div id="about">
       {aboutConstants.map((stage, index) => (
         <div
+          key={'stage' + index}
           className="life-stage"
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-offset="100"
-          data-aos-delay={(100 * index).toString()}
-          data-aos-easing="ease-out"
         >
           <div
             className={
@@ -22,12 +18,11 @@ const About = () => {
             }
             data-aos="fade-up"
             data-aos-duration="500"
-            data-aos-delay="100"
             data-aos-easing="ease-out"
           >
             <div className="description-container">
               {stage.description.map(desc => (
-                <div className="description">
+                <div className="description" key={desc.value}>
                   <span className="desc-value">{desc.value}</span>
                   <label className="desc-label">{desc.label}</label>
                 </div>
@@ -40,5 +35,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;

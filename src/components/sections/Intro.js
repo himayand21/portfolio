@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, ViewButton, Description } from '../intro';
 
-const Intro = () => {
+export const Intro = () => {
   return (
     <div className="intro" id="home">
         <Image />
@@ -10,5 +10,3 @@ const Intro = () => {
     </div>
   );
 };
-
-export default Intro;

@@ -19,3 +19,18 @@ ul, a {
 a:visited {
 	color: inherit !important;
 }
+
+button {
+	border: none;
+	outline: none !important;
+}
+
+* {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}

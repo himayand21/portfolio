@@ -1,2 +1,3 @@
-export * from './navBarConstants';
-export * from './aboutConstants';
+export * from './navBar';
+export * from './about';
+export * from './characteristics';

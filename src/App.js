@@ -1,28 +1,25 @@
-import React, { Component, Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import "./App.css";
 import "./responsive.css";
 import { Home, NavBar } from "./components";
 
-class App extends Component {
-  state = {
-    navShow: false
-  };
-  toggleState = () => this.setState({ navShow: !this.state.navShow });
-  render() {
+const App = () => {
+  const [navShow, setNavShow] = useState(true);
+  const toggleState = () => setNavShow(!navShow);
     return (
       <Fragment>
-        <NavBar navShow={this.state.navShow} toggleState={this.toggleState} />
+        <NavBar
+          navShow={navShow}
+          toggleState={toggleState}
+        />
         <div
-          onClick={() =>
-            this.state.navShow ? this.setState({ navShow: false }) : null
-          }
+          onClick={() => navShow ? setNavShow(false) : null}
           className="sections-container"
         >
           <Home />
         </div>
       </Fragment>
     );
-  }
 }
 
 export default App;

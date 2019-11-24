@@ -1,17 +1,20 @@
 import React from "react";
 
-const Image = props => {
+export const Image = props => {
   return (
     <div className="life-icons">
       <img
-        alt="life-icons"
+        alt=""
         className="icon-img"
         height={150}
         width={150}
-        src={require("../../images/about/" + [props.source] + ".png")}
+        src={props.source}
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="100"
+        data-aos-easing="ease-out"
       />
     </div>
   );
 };
 
-export default Image;

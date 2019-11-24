@@ -1,7 +1,3 @@
-import Intro from './Intro';
-import About from './About';
-
-export {
-    Intro,
-    About
-}
+export * from './About';
+export * from './Intro';
+export * from './Skills';
