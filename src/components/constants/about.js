@@ -3,6 +3,19 @@ import school from '../../images/about/school.png';
 import student from '../../images/about/student.png';
 import employee from '../../images/about/employee.png';
 
+const getExperience = () => {
+    const joiningDate = new Date('06/27/2018');
+    const today = new Date();
+    const timeDifference = today.getTime() - joiningDate.getTime();
+    const noOfMonths = Math.floor(timeDifference / (1000 * 3600 * 24 * 30));
+    const noOfYears = Math.floor(noOfMonths / 12);
+    const yearString = `year${noOfYears == 1 ? '' : 's'}`;
+    const monthString = `month${noOfMonths == 1 ? '' : 's'}`;
+    if (!noOfYears) return `${noOfMonths} ${monthString}`;
+    if (!(noOfMonths - (noOfYears * 12))) return `${noOfYears} ${yearString}`;
+    return `${noOfYears} ${yearString} ${noOfMonths - (noOfYears * 12)} months`
+}
+
 export const aboutConstants = [
     {
         description: [
@@ -29,7 +42,7 @@ export const aboutConstants = [
         description: [
             {label: "work", value: "Wipro Technologies"},
             {label: "designation", value: 'Project Engineer'},
-            {label: "experience", value: "10 months"}
+            {label: "experience", value: getExperience()}
         ],
         image: employee
     }

@@ -18,7 +18,8 @@ export const Skills = () => {
                         <Characteristic
                             transitionIndex={index}
                             characteristic={each}
-                        />)}
+                        />
+                    )}
                 </div>
             </div>
         </div>

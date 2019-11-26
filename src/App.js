@@ -4,7 +4,7 @@ import "./responsive.css";
 import { Home, NavBar } from "./components";
 
 const App = () => {
-  const [navShow, setNavShow] = useState(true);
+  const [navShow, setNavShow] = useState(false);
   const toggleState = () => setNavShow(!navShow);
     return (
       <Fragment>

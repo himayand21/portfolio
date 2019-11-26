@@ -1,27 +1,25 @@
-import responsive from '../../images/characteristics/responsive.png';
-import fast from '../../images/characteristics/fast.png';
-import functional from '../../images/characteristics/functional.png';
-import easyToUse from '../../images/characteristics/easy.png';
+import React from "react";
+import {Fast, Functional, Responsive, EasyToUse} from '../icons';
 
 export const characteristics = [
     {
         title: 'Fast',
         subtitle: 'Quick load time and Lag free experience.',
-        image: fast
+        icon: <Fast />
     },
     {
         title: 'Fuctional',
         subtitle: 'Interactive and Dynamic.',
-        image: functional
+        icon: <Functional />
     },
     {
         title: 'Responsive',
         subtitle: 'All will be served - big screen or small.',
-        image: responsive
+        icon: <Responsive />
     },
     {
         title: 'Easy to Use',
         subtitle: 'Intuitive and Engaging.',
-        image: easyToUse
+        icon: <EasyToUse />
     }
 ]

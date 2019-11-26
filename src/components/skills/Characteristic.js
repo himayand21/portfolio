@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Characteristic = props => {
     const {transitionIndex} = props;
-    const {title, subtitle, image} = props.characteristic;
+    const {title, subtitle, icon} = props.characteristic;
     return (
         <div
             className="characteristic-box"
@@ -12,7 +12,7 @@ export const Characteristic = props => {
             data-aos-easing="ease-out"
         >
             <div className="characteristic-image-container">
-                <img src={image}></img>
+                {icon}
             </div>
             <div className="characteristic-title">{title}</div>
             <div className="characteristic-subtitle">{subtitle}</div>
