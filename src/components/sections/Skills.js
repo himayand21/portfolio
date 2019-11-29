@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Characteristic } from '../skills'
-import { characteristics } from '../constants';
+import { Characteristic, Skill } from '../skills'
+import { characteristics, skills } from '../constants';
 
 export const Skills = () => {
     return (
@@ -18,6 +18,14 @@ export const Skills = () => {
                         <Characteristic
                             transitionIndex={index}
                             characteristic={each}
+                        />
+                    )}
+                </div>
+                <div className="skills-container">
+                    {skills.map((each, index) =>
+                        <Skill
+                            skill={each}
+                            transitionIndex={index}
                         />
                     )}
                 </div>

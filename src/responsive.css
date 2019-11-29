@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1100px) {
   .life-stage {
-    height: 330px;
+    height: 290px;
     width: 50%;
   }
   .life-description-left {
@@ -29,7 +29,8 @@
     text-overflow: ellipsis;
   }
   .description-container {
-    padding-top: 70px;
+    padding-top: 100px;
+    height: 130px;
     margin-top: 0px;
     -webkit-box-shadow: 0px 10px 70px -20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 70px -20px rgba(0, 0, 0, 0.75);

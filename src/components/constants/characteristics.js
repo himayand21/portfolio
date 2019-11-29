@@ -13,13 +13,13 @@ export const characteristics = [
         icon: <Functional />
     },
     {
+        title: 'Easy to Use',
+        subtitle: 'Intuitive and Engaging.',
+        icon: <EasyToUse />
+    },
+    {
         title: 'Responsive',
         subtitle: 'All will be served - big screen or small.',
         icon: <Responsive />
     },
-    {
-        title: 'Easy to Use',
-        subtitle: 'Intuitive and Engaging.',
-        icon: <EasyToUse />
-    }
 ]

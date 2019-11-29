@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "../about";
 import { aboutConstants } from "../constants";
 
 export const About = () => {
@@ -29,7 +28,15 @@ export const About = () => {
               ))}
             </div>
           </div>
-          <Image source={stage.image} />
+          <div 
+            className="life-icons"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+            data-aos-easing="ease-out"
+          >
+            {stage.icon}
+          </div>
         </div>
       ))}
     </div>

@@ -3,3 +3,7 @@ export * from './fast';
 export * from './functional';
 export * from './responsive';
 export * from './easyToUse';
+export * from './birthday';
+export * from './employee';
+export * from './school';
+export * from './student';

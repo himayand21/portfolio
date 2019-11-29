@@ -345,8 +345,9 @@ nav .social-media a:hover .icons {
   background: white;
   border-radius: 50%;
   z-index: 2;
-  width: 100%;
-  height: 100%;
+  padding: 5%;
+  width: 90%;
+  height: 90%;
   -webkit-box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
@@ -394,6 +395,7 @@ nav .social-media a:hover .icons {
   font-size: 17px;
   text-align: right;
   line-height: 30px;
+  color: rgb(62, 66, 70);
 }
 
 .skills-wrapper {
@@ -407,16 +409,29 @@ nav .social-media a:hover .icons {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-.characteristics-container {
+.characteristics-container, .skills-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
 }
-.characteristic-box {
+.characteristics-container {
+  box-sizing: content-box;
+  background: rgb(240, 240, 240);
+  width: calc(100% + 40px);
+  padding-top: 20px;
+  margin-left: -20px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+.skills-container {
+  margin-top: 25px;
+}
+.characteristic-box, .skill-box {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -426,16 +441,85 @@ nav .social-media a:hover .icons {
   padding: 0 10px 10px;
   margin-bottom: 30px;
 }
+.skill-box {
+  flex-basis: 130px;
+}
 .characteristic-title {
   font-weight: bold;
   padding: 5px 0 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+.skill-image-container {
+  position: relative;
+  height: 70px;
+  width: 100%;
+}
+.skill-image-container .skill-image {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 35px);
+  height: 100%;
+  width: 70px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.skill-image-container .skill-image:first-child {
+  filter: grayscale(100%);
+}
+
+.skill-image.icon-sass {
+  transform: scale(1.3);
+}
+.skill-image.icon-js {
+  transform: scale(1.4);
+}
+
+.skill-image.icon-webpack, .skill-image.icon-mongo {
+  transform: scale(1.2);
+}
+
+.skill-image.icon-react {
+  transform: scale(1.1);
+}
+
+.skill-image.icon-redux, .skill-image.icon-native {
+  border-radius: 50%;
+}
+
+.skill-image.icon-native {
+  padding: 8px;
+  transform: scale(0.8);
+  background-color: #222222;
+  left: calc(50% - 42px);
+  top: -15px;
+}
+
+.skill-label {
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+@media only screen and (min-width: 625px) and (max-width: 1000px) {
   .characteristic-box {
     flex-basis: 250px;
     padding-right: 20px;
     padding-left: 20px;
     box-sizing: border-box;
+  }
+  .skill-box {
+    flex-basis: 100px;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .skills-wrapper {
+    width: 90%;
+  }
+  .skill-box {
+    flex-basis: 90px;
+  }
+  .skill-label {
+    margin-bottom: 0px;
   }
 }
