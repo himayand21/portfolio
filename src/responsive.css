@@ -122,3 +122,42 @@
     font-size: 20px;
   }
 }
+
+@media only screen and (min-width: 625px) and (max-width: 1000px) {
+  .characteristic-box {
+    flex-basis: 250px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .skill-box {
+    flex-basis: 100px;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .characteristic-box {
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .skills-wrapper {
+    width: 90%;
+  }
+  .skill-box {
+    flex-basis: 90px;
+  }
+  .skill-label {
+    margin-bottom: 3px;
+  }
+  .section-header {
+    width: 90%;
+  }
+  .section-header span {
+    font-size: 20px;
+  }
+  .section-header::before {
+    margin-top: 12px;
+    width: 50px;
+  }
+}

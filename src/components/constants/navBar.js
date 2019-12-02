@@ -1,9 +1,5 @@
 export const navList = [
     {
-        label: "Home",
-        link: "home"
-    },
-    {
         label: "Skills",
         link: "skills"
     },

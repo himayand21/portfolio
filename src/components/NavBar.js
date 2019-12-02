@@ -35,10 +35,17 @@ const NavBar = props => {
       setCurrentSection(current);
     }
   }, [scrollY]);
+
+  const className = currentSection === "home" ? 'arrow-hide' : 'arrow-show'
+
   return (
     <React.Fragment>
-      <span className="navbar-show" onClick={() => props.toggleState()}>
-        <i className="fas fa-bars" />
+      <span className="navbar-show">
+        <i
+          className={`fas fa-arrow-up ${className}`}
+          onClick={() => goToSection("home")}
+        />
+        <i className="fas fa-bars" onClick={() => props.toggleState()} />
       </span>
       <div className={props.navShow ? "navbar-open" : "navbar-closed"}>
         <nav>

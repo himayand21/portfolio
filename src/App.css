@@ -161,7 +161,7 @@ nav ul {
   );
 }
 
-#about {
+.about-wrapper {
   background: linear-gradient(
     160deg,
     #ADADAD 45%,
@@ -204,7 +204,7 @@ nav .social-media {
   display: flex;
   flex-direction: row;
   width: calc(100% - 40px);
-  margin: 40px 20px 20px;
+  margin: 50px 20px 20px;
   justify-content: space-around;
 }
 
@@ -268,23 +268,41 @@ nav .social-media a:hover .icons {
   background: white;
   color: #4d4d4d;
   height: 40px;
-  width: 40px;
-  border-radius: 50px;
+  border-radius: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s ease;
-  z-index: 1;
+  z-index: 10;
   -webkit-box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.5);
 }
-.navbar-show:hover {
+.navbar-show i {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-show .fa-arrow-up.arrow-hide {
+  visibility: none;
+  width: 0px;
+  opacity: 0;
+  transition: width 0.3s 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.navbar-show .fa-arrow-up.arrow-show {
+  visibility: visible;
+  width: 40px;
+  opacity: 1;
+  transition: width 0.3s ease-in-out, opacity 0.3s 0.3s ease-in-out;
+}
+.navbar-show i.fa-arrow-up {
+  border-right: 1px solid rgba(235, 235, 235);
+}
+.navbar-show i:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-closed nav {
@@ -344,7 +362,7 @@ nav .social-media a:hover .icons {
 .icon-img {
   background: white;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 3;
   padding: 5%;
   width: 90%;
   height: 90%;
@@ -500,26 +518,47 @@ nav .social-media a:hover .icons {
   margin: 5px 0px;
 }
 
-@media only screen and (min-width: 625px) and (max-width: 1000px) {
-  .characteristic-box {
-    flex-basis: 250px;
-    padding-right: 20px;
-    padding-left: 20px;
-    box-sizing: border-box;
-  }
-  .skill-box {
-    flex-basis: 100px;
-  }
+.ratings-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
-@media only screen and (max-width: 624px) {
-  .skills-wrapper {
-    width: 90%;
-  }
-  .skill-box {
-    flex-basis: 90px;
-  }
-  .skill-label {
-    margin-bottom: 0px;
-  }
+.section-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.section-header span {
+  z-index: 2;
+  background-color: white;
+  padding: 0 10px;
+  position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+.section-header::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 1px;
+  margin-top: 14px;
+  z-index: 1;
+  border-top: 1px solid rgb(215, 215, 215);
+}
+
+.section-header span {
+  background-color: #64485C;
+  color: white;
+}
+
+.about-wrapper .section-header span {
+  background-color: #ADADAD;
+  color: #64485C;
+}
+.about-wrapper .section-header::before {
+  border-top: 1px solid #64485C;
 }
