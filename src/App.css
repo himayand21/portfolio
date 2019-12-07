@@ -530,6 +530,9 @@ nav .social-media a:hover .icons {
   margin: auto;
   margin-bottom: 30px;
 }
+#projects .section-header {
+  margin-top: 30px;
+}
 .section-header span {
   z-index: 2;
   background-color: white;
@@ -561,4 +564,107 @@ nav .social-media a:hover .icons {
 }
 .about-wrapper .section-header::before {
   border-top: 1px solid #64485C;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.project-box {
+  width: 30vw;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.project-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-box .project-image {
+  width: 100%;
+}
+.project-box .project-skills-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  background-color: lightgray;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  margin-bottom: -2px;
+}
+.project-skills-wrapper .project-skill {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-skill .project-skill-image {
+  max-width: 40px;
+  max-height: 40px;
+  margin-bottom: 5px;
+}
+.project-skill .project-skill-image.project-skill-Redux {
+  border-radius: 50%;
+  max-width: 42px;
+  max-height: 42px;
+}
+.project-skill .project-skill-image.project-skill-React.Native {
+  border-radius: 50%;
+  padding: 3px;
+  box-sizing: border-box;
+  background-color: #222222;
+  max-width: 42px;
+  max-height: 42px;
+}
+.project-skill .project-skill-image.project-skill-JavaScript {
+  border-radius: 50%;
+}
+.project-skill .project-skill-label {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.project-box .project-content .project-header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 15px 0;
+}
+.project-box .project-title {
+  font-size: 17px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+
+.project-box .link-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-wrapper a {
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #64485C !important;
+  cursor: pointer;
+}
+.link-wrapper a:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid lightgray;
 }

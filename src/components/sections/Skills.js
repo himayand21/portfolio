@@ -13,8 +13,8 @@ export const Skills = () => {
                 data-aos-delay="200"
                 data-aos-easing="ease-in-out"
             >
-                    <span>Skills</span>
-                </div>
+                <span>Skills</span>
+            </div>
             <div
                 className="skills-wrapper"
                 data-aos="fade-up"
