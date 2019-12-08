@@ -161,3 +161,18 @@
     width: 50px;
   }
 }
+
+@media only screen and (max-width: 1068px) {
+  .projects-wrapper {
+    width: 95%;
+  }
+  .project-box {
+    width: 46vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project-box {
+    width: 85vw;
+  }
+}

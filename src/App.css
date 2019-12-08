@@ -570,7 +570,8 @@ nav .social-media a:hover .icons {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   flex-wrap: wrap;
 }
 .project-box {

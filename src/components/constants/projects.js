@@ -19,7 +19,7 @@ export const projects = [
         subtitle: 'A texting application where the user can connect with his friends and manage his public profile.',
         skills: [{
             source: react,
-            label: 'ReactJS'
+            label: 'React'
         }, {
             source: firebase,
             label: 'Firebase'
@@ -63,7 +63,7 @@ export const projects = [
             label: 'MongoDB'
         }, {
             source: react,
-            label: 'ReactJS'
+            label: 'React'
         }, {
             source: redux,
             label: 'Redux'
@@ -85,7 +85,7 @@ export const projects = [
             label: 'MongoDB'
         }, {
             source: react,
-            label: 'ReactJS'
+            label: 'React'
         }, {
             source: redux,
             label: 'Redux'
@@ -129,7 +129,7 @@ export const projects = [
             label: 'MongoDB'
         }, {
             source: react,
-            label: 'ReactJS'
+            label: 'React'
         }, {
             source: redux,
             label: 'Redux'
