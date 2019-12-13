@@ -9,8 +9,8 @@ const Home = () => {
       <React.Fragment>
         <Intro />
         <Skills />
-        <About />
         <Projects />
+        <About />
         <div id="contact">
           <h1>Section 3</h1>
           <p>

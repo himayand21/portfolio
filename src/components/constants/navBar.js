@@ -4,12 +4,12 @@ export const navList = [
         link: "skills"
     },
     {
-        label: "About",
-        link: 'about'
-    },
-    {
         label: "Projects",
         link: "projects"
+    },
+    {
+        label: "About",
+        link: 'about'
     },
     {
         label: "Contact",

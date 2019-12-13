@@ -12,11 +12,18 @@ import firebase from '../../images/skills/firebase.png';
 
 import weconnect from '../../images/projects/weconnect.jpg';
 import createWebpack from '../../images/projects/createWebpack.jpg';
+import skillRegistry from '../../images/projects/skillRegistry.jpg';
+import interviewDesktop from '../../images/projects/interviewDesktop.jpg';
+import interviewMobile from '../../images/projects/interviewMobile.jpg';
+import onlineTest from '../../images/projects/onlineTest.jpg';
+import weatherExtension from '../../images/projects/weatherExtension.jpg';
+import bookStore from '../../images/projects/bookStore.jpg';
+import todoList from '../../images/projects/todoList.jpg';
 
 export const projects = [
     {
         title: 'WeConnect',
-        subtitle: 'A texting application where the user can connect with his friends and manage his public profile.',
+        subtitle: `A texting application where the user can find his friends and connect with them via friend requests. Primary features include - forward, reply, delete messages, sending images and user profile.`,
         skills: [{
             source: react,
             label: 'React'
@@ -72,7 +79,7 @@ export const projects = [
             label: 'Visit Website',
             value: 'https://skill-registry.netlify.com'
         },
-        image: weconnect
+        image: skillRegistry
     },
     {
         title: 'Interview Feedback - Web App',
@@ -94,7 +101,7 @@ export const projects = [
             label: 'Visit Website',
             value: 'https://interview-feedback.netlify.com'
         },
-        image: weconnect
+        image: interviewDesktop
     },
     {
         title: 'Interview Feedback - Mobile App',
@@ -116,11 +123,11 @@ export const projects = [
             label: 'View Mobile App',
             value: 'https://expo.io/@himayan/feedback-app'
         },
-        image: weconnect
+        image: interviewMobile
     },
     {
         title: 'Online Test Platform',
-        subtitle: 'An online test platform with a candidate porrtal for attending the exam and an admin portal for monitoring performances of candidates.',
+        subtitle: 'An online test platform with a candidate portal for attending the exam and an admin portal for monitoring performances of candidates.',
         skills: [{
             source: node,
             label: 'NodeJS'
@@ -138,7 +145,7 @@ export const projects = [
             label: 'View Project',
             value: 'https://vimeo.com/300708908'
         },
-        image: weconnect
+        image: onlineTest
     },
     {
         title: 'Weather App Extension',
@@ -154,11 +161,33 @@ export const projects = [
             label: 'View Project',
             link: 'https://github.com/himayand21/weather-extension'
         },
-        image: weconnect
+        image: weatherExtension
+    },
+    {
+        title: 'Bookstore',
+        subtitle: `A e-commerce website for finding one's favorite book using a given keyword. The search results are provided by google books api.`,
+        skills: [{
+            source: react,
+            label: 'React'
+        }, {
+            source: js,
+            label: 'JavaScript'
+        }, {
+            source: css,
+            label: 'CSS-3'
+        }, {
+            source: html,
+            label: 'HTML-5'
+        }],
+        links: {
+            label: 'View Project',
+            link: 'https://vimeo.com/300492070'
+        },
+        image: bookStore
     },
     {
         title: 'To Do List',
-        subtitle: 'A simple To-Do list application to store reminders',
+        subtitle: 'A simple To-Do list application to store reminders.',
         skills: [{
             source: js,
             label: 'JavaScript'
@@ -173,6 +202,6 @@ export const projects = [
             label: 'View Project',
             link: 'https://github.com/himayand21/myProjects/blob/master/ToDoList.html'
         },
-        image: weconnect
+        image: todoList
     }
 ]

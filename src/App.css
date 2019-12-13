@@ -161,7 +161,7 @@ nav ul {
   );
 }
 
-.about-wrapper {
+#projects {
   background: linear-gradient(
     160deg,
     #ADADAD 45%,
@@ -169,19 +169,20 @@ nav ul {
   );
 }
 
-#projects {
+#contact {
+  background: linear-gradient(
+    180deg,
+    #ADADAD 45%,
+    #64485C 45%
+  );
+}
+
+.about-wrapper {
+  padding-top: 30px;
   background: linear-gradient(
     160deg,
     #64485C 45%,
     #ADADAD 45%
-  );
-}
-
-#contact {
-  background: linear-gradient(
-    160deg,
-    #ADADAD 45%
-    #64485C 45%
   );
 }
 
@@ -406,14 +407,14 @@ nav .social-media a:hover .icons {
 .desc-label {
   font-size: 17px;
   font-weight: bold;
-  color: rgb(62, 66, 70);
+  color: black;
   line-height: 30px;
 }
 .desc-value {
   font-size: 17px;
   text-align: right;
   line-height: 30px;
-  color: rgb(62, 66, 70);
+  color: black;
 }
 
 .skills-wrapper {
@@ -558,11 +559,11 @@ nav .social-media a:hover .icons {
   color: white;
 }
 
-.about-wrapper .section-header span {
+#projects .section-header span {
   background-color: #ADADAD;
   color: #64485C;
 }
-.about-wrapper .section-header::before {
+#projects .section-header::before {
   border-top: 1px solid #64485C;
 }
 
@@ -599,7 +600,7 @@ nav .social-media a:hover .icons {
   align-items: stretch;
   justify-content: flex-end;
   background-color: lightgray;
-  padding: 20px 10px;
+  padding: 20px 15px;
   box-sizing: border-box;
   margin-bottom: -2px;
 }
@@ -627,6 +628,9 @@ nav .social-media a:hover .icons {
   background-color: #222222;
   max-width: 42px;
   max-height: 42px;
+}
+.project-skill .project-skill-image.project-skill-Sass {
+  transform: scale(1.3);
 }
 .project-skill .project-skill-image.project-skill-JavaScript {
   border-radius: 50%;

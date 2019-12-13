@@ -67,7 +67,7 @@ const NavBar = props => {
               </li>
             ))}
           </ul>
-          <ul className="social-media">
+          {/* <ul className="social-media">
             {socialMedia.map(icon => (
               <li>
                 <a href={icon.link} target="_tab">
@@ -75,7 +75,7 @@ const NavBar = props => {
                 </a>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </nav>
       </div>
     </React.Fragment >

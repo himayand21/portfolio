@@ -162,13 +162,42 @@
   }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1068px) and (min-width: 701px) {
   .projects-wrapper {
     width: 95%;
   }
   .project-box {
     width: 46vw;
   }
+  .project-box:first-child {
+    width: 93vw;
+  }
+  .project-box:first-child .project-skill-image {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .project-box:first-child .project-header {
+    padding: 30px 30px 0px;
+  }
+  .project-box:first-child .project-title {
+    font-size: 20px;
+  }
+  .project-box:first-child .project-subtitle {
+    font-size: 17px;
+  }
+  .project-box:first-child .link-wrapper {
+    padding: 30px;
+  }
+  .project-box:first-child .project-skills-wrapper {
+    padding: 30px;
+  }
+  .project-box:first-child .project-skill {
+    margin: 0 10px;
+  }
+  .projects-wrapper {
+    width: 95%;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
