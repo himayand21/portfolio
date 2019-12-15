@@ -6,10 +6,6 @@ export const About = () => {
     <section className="about-wrapper">
       <div
         className="section-header"
-        data-aos="fade-left"
-        data-aos-duration="500"
-        data-aos-delay="200"
-        data-aos-easing="ease-in-out"
       >
         <span>About</span>
       </div>
@@ -25,9 +21,6 @@ export const About = () => {
                   ? "life-desc life-description-left"
                   : "life-desc life-description-right"
               }
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-easing="ease-out"
             >
               <div className="description-container">
                 {stage.description.map(desc => (
@@ -40,10 +33,6 @@ export const About = () => {
             </div>
             <div
               className="life-icons"
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="100"
-              data-aos-easing="ease-out"
             >
               {stage.icon}
             </div>

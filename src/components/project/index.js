@@ -2,7 +2,6 @@ import React from "react";
 
 export const Project = (props) => {
     const {
-        transitionIndex,
         title,
         image,
         links,
@@ -12,10 +11,6 @@ export const Project = (props) => {
     return (
         <div
             className="project-box"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay={(transitionIndex + 1) * 50}
-            data-aos-easing="ease-out"
         >
             <img className="project-image" src={image} alt="" />
             <div className="project-content">

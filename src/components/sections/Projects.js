@@ -7,18 +7,13 @@ export const Projects = () => {
         <div id="projects">
             <div
                 className="section-header"
-                data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="200"
-                data-aos-easing="ease-in-out"
             >
                 <span>Projects</span>
             </div>
             <div className="projects-wrapper">
-            {projects.map((each, index) => (
+            {projects.map((each) => (
                 <Project
                     {...each}
-                    transitionIndex={index}
                 />
             ))}
             </div>

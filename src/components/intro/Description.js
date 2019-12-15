@@ -3,10 +3,6 @@ const Description = () => {
   return (
     <div
       className="description-wrapper item"
-      data-aos="fade-up"
-      data-aos-duration="500"
-      data-aos-delay="200"
-      data-aos-easing="ease-out"
     >
       <span className="hi">Hi there!</span>
       <br />

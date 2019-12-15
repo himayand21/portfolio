@@ -88,7 +88,7 @@ const getFullWidth = (className) => {
 }
 
 export const Skill = (props) => {
-    const { skill, transitionIndex } = props;
+    const { skill } = props;
     const { className, label, rating, source } = skill;
     const fullWidth = getFullWidth(className);
     const visibleHeight = ((5 - rating) / 5) * fullWidth;
@@ -101,10 +101,6 @@ export const Skill = (props) => {
     return (
         <div
             className="skill-box"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay={(transitionIndex + 1)*50}
-            data-aos-easing="ease-out"
         >
             <div className="skill-image-container">
                 <img

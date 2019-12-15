@@ -129,8 +129,10 @@ nav ul {
 }
 
 .fa-arrow-right {
-  font-size: 16px;
+  width: 16px;
   margin: 0 10px;
+  height: 26px;
+  margin-bottom: -6px;
   transition: 0.5s;
 }
 
@@ -186,10 +188,10 @@ nav ul {
   );
 }
 
-nav .social-media a {
-  border-width: 0px;
-  padding: 15px 15px 10px 15px;
-  color: #8d8d8d !important;
+.social-media a .icons {
+  padding: 3px 10px;
+  width: 20px;
+  color: #836778 !important;
 }
 
 nav ul {
@@ -201,16 +203,14 @@ nav {
   min-height: 100vh;
 }
 
-nav .social-media {
+.social-media {
+  padding-left: 0px;
   display: flex;
   flex-direction: row;
-  width: calc(100% - 40px);
-  margin: 50px 20px 20px;
-  justify-content: space-around;
+  margin: 10px 0 0 -10px;
 }
 
-nav .social-media a:hover .icons {
-  color: #836778;
+.social-media a:hover .icons {
   -webkit-animation-name: pop; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
   animation-name: pop;
@@ -561,10 +561,21 @@ nav .social-media a:hover .icons {
 
 #projects .section-header span {
   background-color: #ADADAD;
-  color: #64485C;
+  color: black;
 }
 #projects .section-header::before {
-  border-top: 1px solid #64485C;
+  border-top: 1px solid black;
+}
+
+#contact .section-header {
+  margin-top: 35px;
+}
+#contact .section-header span {
+  background-color: #ADADAD;
+  color: black;
+}
+#contact .section-header::before {
+  border-top: 1px solid black;
 }
 
 .projects-wrapper {
@@ -672,4 +683,55 @@ nav .social-media a:hover .icons {
 .link-wrapper a:not(:first-child) {
   padding-left: 10px;
   border-left: 1px solid lightgray;
+}
+
+.contact-title {
+  margin: 30px 10px 15px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.contact-subtitle {
+  font-size: 17px;
+  margin: 10px;
+}
+
+.contact-details {
+  margin: 30px 10px;
+}
+.contact-details .contact-label {
+  color: gray;
+  margin-bottom: 3px;
+}
+.contact-details .contact-desc {
+  font-weight: bolder;
+}
+.contact-details a {
+  color: #64485C;
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.copyright {
+  margin: 30px auto;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.copyright span {
+  color: lightgray;
+  margin-left: 5px;
+}
+
+.contacts-wrapper {
+  position: relative;
+}
+.contact-icon-wrapper {
+  position: absolute;
+  right: 40px;
+}
+i svg {
+  width: 18px;
 }

@@ -205,3 +205,9 @@
     width: 85vw;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .contact-icon-wrapper {
+    display: none;
+  }
+}
