@@ -29,7 +29,7 @@ export const NavBar = props => {
   useEffect(() => {
     if (offsetList.length) {
       const current = offsetList.reduce((acc, curr) => {
-        if (scrollY > curr.offset - 10) return curr.navId;
+        if (scrollY > curr.offset) return curr.navId;
         return acc;
       }, "home");
       setCurrentSection(current);
