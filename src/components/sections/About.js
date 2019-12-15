@@ -3,13 +3,13 @@ import { aboutConstants } from "../constants";
 
 export const About = () => {
   return (
-    <section className="about-wrapper">
+    <section id="about">
       <div
         className="section-header"
       >
         <span>About</span>
       </div>
-      <div id="about">
+      <div className="life-stage-wrapper">
         {aboutConstants.map((stage, index) => (
           <div
             key={'stage' + index}

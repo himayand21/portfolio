@@ -12,7 +12,9 @@ export const Project = (props) => {
         <div
             className="project-box"
         >
-            <img className="project-image" src={image} alt="" />
+            <div className="project-image">
+                <img src={image} alt="" />
+            </div>
             <div className="project-content">
                 <div className="project-header">
                     <div className="project-title">{title}</div>

@@ -165,7 +165,7 @@ export const projects = [
     },
     {
         title: 'Bookstore',
-        subtitle: `A e-commerce website for finding one's favorite book using a given keyword. The search results are provided by google books api.`,
+        subtitle: `An e-commerce website for finding one's favorite book using a given keyword. The search results are provided by google books api.`,
         skills: [{
             source: react,
             label: 'React'

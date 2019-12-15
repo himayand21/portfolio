@@ -5,7 +5,7 @@ import { navList, navIds } from "./constants";
 const goToSection = sectionID => {
   const element = document.getElementById(sectionID);
   window.scrollTo({
-    top: element.offsetTop
+    top: element.offsetTop + 10
   });
 };
 

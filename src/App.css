@@ -29,7 +29,8 @@ nav ul {
 #nav-link {
   width: 241px;
   text-align: center;
-  color: #636363;
+  color: #4d4d4d;
+  font-weight: bold;
   padding-bottom: 0.5px;
   padding: 20px 0;
   font-size: 18px;
@@ -179,7 +180,7 @@ nav ul {
   );
 }
 
-.about-wrapper {
+#about {
   padding-top: 30px;
   background: linear-gradient(
     160deg,
@@ -603,6 +604,12 @@ nav {
   justify-content: space-between;
 }
 .project-box .project-image {
+  width: 100%;
+  height: calc(30vw / 1.5);
+  overflow: hidden;
+  background-color: gray;
+}
+.project-image img {
   width: 100%;
 }
 .project-box .project-skills-wrapper {

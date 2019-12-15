@@ -58,7 +58,7 @@
     -moz-box-shadow: 0px -15px 10px -20px rgba(0, 0, 0, 0.75);
     box-shadow: 0px -10px 30px -20px rgba(0, 0, 0, 0.75);
   }
-  #about {
+  .life-stage-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
@@ -74,7 +74,7 @@
   .life-stage {
     width: 100%;
   }
-  #about {
+  .life-stage-wrapper {
     display: block;
   }
 }
@@ -169,8 +169,15 @@
   .project-box {
     width: 46vw;
   }
+  .project-box .project-image {
+    width: 100%;
+    height: calc(46vw / 1.5);
+  }
   .project-box:first-child {
     width: 93vw;
+  }
+  .project-box:first-child .project-image {
+    height: calc(93vw / 1.5);
   }
   .project-box:first-child .project-skill-image {
     max-width: 50px;
@@ -203,6 +210,10 @@
 @media only screen and (max-width: 700px) {
   .project-box {
     width: 85vw;
+  }
+  .project-box .project-image {
+    width: 100%;
+    height: calc(85vw / 1.5);
   }
 }
 
