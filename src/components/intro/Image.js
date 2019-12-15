@@ -7,7 +7,7 @@ const Image = () => {
       className="item"
     >
       <img
-        alt="awesome-me"
+        alt=""
         className="profile-pic"
         src={image}
       />
