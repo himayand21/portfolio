@@ -524,6 +524,9 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+.ratings-wrapper svg {
+	height: 20px;
+}
 
 .section-header {
   display: flex;
