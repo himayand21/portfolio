@@ -11,8 +11,9 @@ export const Contact = () => {
                     Contact
                 </span>
             </div>
-            <div className="skills-wrapper contacts-wrapper">
-                <div className="contact-icon-wrapper">
+            <div className="skills-wrapper">
+				<div className="contacts-wrapper">
+					<div className="contact-icon-wrapper">
                     <Email />
                 </div>
                 <div className="contact-title">
@@ -44,6 +45,7 @@ export const Contact = () => {
                 <div className="contact-details">
                     <a download href={Resume}>Download Resume</a>
                 </div>
+				</div>
             </div>
             <div className="copyright">
                 HIMAYAN DEBNATH <span>© 2019</span>

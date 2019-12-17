@@ -222,3 +222,21 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 1361px) {
+	.navbar-open ~ .sections-container {
+		margin-left: 241px;
+		width: calc(100vw - 241px);
+		transition: margin-left 0.5s ease-in-out, width 0.5s ease-in-out;
+	}
+	.navbar-open ~ .sections-container .project-box {
+		width: 32%;
+	}
+	.navbar-open ~ .sections-container .project-box .project-image {
+		height: calc((100vw - 241px) / 5);
+	}
+	.navbar-open ~ .sections-container .life-icons {
+		left: calc(50% + 45px);
+		transition: left 0.5s ease-in-out;
+	}
+}

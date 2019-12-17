@@ -62,7 +62,7 @@ nav ul {
 
 .profile-pic {
   width: 320px;
-  margin-left: calc(50vw - 160px);
+  margin-left: calc(50% - 160px);
   margin-top: calc(50vh - 270px);
   overflow: hidden;
   border-radius: 50%;
@@ -144,6 +144,7 @@ nav ul {
 .sections-container {
   width: 100vw;
   overflow: hidden;
+  transition: margin-left 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 .intro {
   background: linear-gradient(
@@ -309,11 +310,11 @@ nav {
 
 .navbar-closed nav {
   left: -241px;
-  transition: left 0.5s ease-out;
+  transition: left 0.5s ease-in-out;
 }
 .navbar-open nav {
   left: 0;
-  transition: left 0.5s ease-out;
+  transition: left 0.5s ease-in-out;
 }
 
 .title {
@@ -359,6 +360,7 @@ nav {
   left: calc(50% - 75px);
   width: 150px;
   height: 150px;
+  transition: left 0.5s ease-in-out;
 }
 
 .icon-img {
@@ -449,7 +451,8 @@ nav {
   margin-bottom: 60px;
 }
 .skills-container {
-  margin-top: 25px;
+	max-width: 1000px;
+	margin: 25px auto 0;
 }
 .characteristic-box, .skill-box {
   flex: 1;
@@ -744,4 +747,9 @@ nav {
 }
 i svg {
   width: 18px;
+}
+
+.contacts-wrapper {
+	max-width: 1400px;
+	margin: auto;
 }
