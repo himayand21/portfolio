@@ -19,6 +19,7 @@ import onlineTest from '../../images/projects/onlineTest.jpg';
 import weatherExtension from '../../images/projects/weatherExtension.jpg';
 import bookStore from '../../images/projects/bookStore.jpg';
 import todoList from '../../images/projects/todoList.jpg';
+import kataKuti from '../../images/projects/katakuti.jpg';
 
 export const projects = [
     {
@@ -163,6 +164,28 @@ export const projects = [
         },
         image: weatherExtension
     },
+	{
+		title: 'KataKuti',
+        subtitle: `The classic game of tic-tac-toe which can be played between two users from the same device. And it also comes with an easy to beat AI.`,
+        skills: [{
+            source: react,
+            label: 'React'
+        }, {
+            source: js,
+            label: 'JavaScript'
+        }, {
+            source: sass,
+            label: 'Sass'
+        }, {
+            source: html,
+            label: 'HTML-5'
+        }],
+        links: {
+            label: 'View Project',
+            link: 'https://kata-kuti.netlify.com'
+        },
+        image: kataKuti
+	},
     {
         title: 'Bookstore',
         subtitle: `An e-commerce website for finding one's favorite book using a given keyword. The search results are provided by google books api.`,

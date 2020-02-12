@@ -48,7 +48,7 @@ export const Contact = () => {
 				</div>
             </div>
             <div className="copyright">
-                HIMAYAN DEBNATH <span>© 2019</span>
+                HIMAYAN DEBNATH <span>© 2020</span>
             </div>
         </div>
     )
