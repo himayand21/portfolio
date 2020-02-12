@@ -6,11 +6,11 @@ import { characteristics, skills } from '../constants';
 export const Skills = () => {
     return (
         <div id="skills">
-            <div
+            <h1
                 className="section-header"
             >
                 <span>Skills</span>
-            </div>
+            </h1>
             <div
                 className="skills-wrapper"
             >

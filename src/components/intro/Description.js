@@ -1,7 +1,7 @@
 import React from "react";
 const Description = () => {
   return (
-    <div
+    <header
       className="description-wrapper item"
     >
       <span className="hi">Hi there!</span>
@@ -15,7 +15,7 @@ const Description = () => {
           <span className="my-profession"> front-end web developer</span>.
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

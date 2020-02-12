@@ -4,11 +4,11 @@ import { aboutConstants } from "../constants";
 export const About = () => {
   return (
     <section id="about">
-      <div
+      <h1
         className="section-header"
       >
         <span>About</span>
-      </div>
+      </h1>
       <div className="life-stage-wrapper">
         {aboutConstants.map((stage, index) => (
           <div

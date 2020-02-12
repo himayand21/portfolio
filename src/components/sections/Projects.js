@@ -5,11 +5,11 @@ import { projects } from '../constants';
 export const Projects = () => {
     return (
         <div id="projects">
-            <div
+            <h1
                 className="section-header"
             >
                 <span>Projects</span>
-            </div>
+            </h1>
             <div className="projects-wrapper">
             {projects.map((each) => (
                 <Project

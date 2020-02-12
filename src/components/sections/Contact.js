@@ -6,11 +6,11 @@ import Resume from '../../images/resume.pdf';
 export const Contact = () => {
     return (
         <div id="contact">
-            <div className="section-header">
+            <h1 className="section-header">
                 <span>
                     Contact
                 </span>
-            </div>
+            </h1>
             <div className="skills-wrapper">
 				<div className="contacts-wrapper">
 					<div className="contact-icon-wrapper">
