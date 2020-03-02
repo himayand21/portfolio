@@ -85,6 +85,7 @@ export const NavBar = props => {
           <ul className="navlist-wrapper">
             {navList.map(navItem => (
               <li
+			  	key={navItem.label}
                 id="nav-link"
                 onClick={() => goToSection(navItem.link)}
                 className={currentSection === navItem.link ? "current-nav" : ""}

@@ -34,7 +34,7 @@ export const Contact = () => {
                     <div className="contact-desc">Join me on Social Media</div>
                     <ul className="social-media">
                         {socialMedia.map(each => (
-                            <li>
+                            <li key={each.link}>
                                 <a href={each.link} target="_tab">
                                     {each.icon}
                                 </a>

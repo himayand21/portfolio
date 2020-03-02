@@ -94,9 +94,9 @@ export const Skill = (props) => {
     const visibleHeight = ((5 - rating) / 5) * fullWidth;
     const emptyRatings = [0, 0, 0, 0, 0];
     const starRatings = emptyRatings.map((each, index) => {
-        if (rating >= (index + 1)) return <FullStar />;
-        if (rating  === (index + 0.5)) return <HalfStar />;
-        return <EmptyStar />;
+        if (rating >= (index + 1)) return <FullStar key={index} />;
+        if (rating  === (index + 0.5)) return <HalfStar key={index} />;
+        return <EmptyStar key={index} />;
     });
     return (
         <div

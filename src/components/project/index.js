@@ -13,7 +13,7 @@ export const Project = (props) => {
             className="project-box"
         >
             <div className="project-image">
-                <img src={image} alt="" />
+                <img data-src={image} alt="" className="lazy" />
             </div>
             <div className="project-content">
                 <div className="project-header">
@@ -28,7 +28,10 @@ export const Project = (props) => {
                     </div>
                     <div className="project-skills-wrapper">
                         {skills.map((each) => (
-                            <div className="project-skill">
+                            <div
+								className="project-skill"
+								key={each.label}
+							>
                                 <img
                                     alt=""
                                     src={each.source}

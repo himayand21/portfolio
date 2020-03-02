@@ -13,6 +13,7 @@ export const Projects = () => {
             <div className="projects-wrapper">
             {projects.map((each) => (
                 <Project
+					key={each.title}
                     {...each}
                 />
             ))}

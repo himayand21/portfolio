@@ -17,6 +17,7 @@ export const Skills = () => {
                 <div className="characteristics-container">
                     {characteristics.map((each) =>
                         <Characteristic
+							key={each.title}
                             characteristic={each}
                         />
                     )}
@@ -24,6 +25,7 @@ export const Skills = () => {
                 <div className="skills-container">
                     {skills.map((each) =>
                         <Skill
+							key={each.label}
                             skill={each}
                         />
                     )}
