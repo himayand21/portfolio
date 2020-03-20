@@ -20,6 +20,8 @@ import weatherExtension from '../../images/projects/weatherExtension.jpg';
 import bookStore from '../../images/projects/bookStore.jpg';
 import todoList from '../../images/projects/todoList.jpg';
 import kataKuti from '../../images/projects/katakuti.jpg';
+import covid19 from '../../images/projects/covid19.jpg';
+import nodeReactAuth from '../../images/projects/nodeReactAuth.jpg';
 
 export const projects = [
     {
@@ -41,6 +43,41 @@ export const projects = [
         },
         image: weconnect
     },
+	{
+		title: 'Covid Statistics',
+		subtitle: 'An overview of the damage caused by Covid-19 in the form of maps and charts.',
+		skills: [{
+			source: react,
+			label: 'React'
+		}, {
+			source: sass,
+			label: 'Sass'
+		}],
+		links: {
+			label: 'Visit Website',
+			value: 'https://covid-statistics.netlify.com'
+		},
+		image: covid19
+	},
+	{
+		title: 'node-react-auth',
+		subtitle: 'A helper library to ease jwt authentication for node-react applications. For applications using Node-Express-MongoDB-React, this library would help you create an authentication launchpad with minimum manual configurations.',
+		skills: [{
+			source: node,
+			label: 'NodeJS'
+		}, {
+			source: mongo,
+			label: 'MongoDB'
+		}, {
+			source: react,
+			label: 'React'
+		}],
+		links: {
+			label: 'View Module',
+			value: 'https://www.npmjs.com/package/node-react-auth'
+		},
+		image: nodeReactAuth
+	},
     {
         title: 'create-webpack-react-app',
         subtitle: 'A command line interface to generate a boilerplate for a React application along with necessary webpack and babel configurations.',
