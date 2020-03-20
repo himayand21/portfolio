@@ -197,7 +197,7 @@ export const projects = [
         }],
         links: {
             label: 'View Project',
-            link: 'https://github.com/himayand21/weather-extension'
+            value: 'https://github.com/himayand21/weather-extension'
         },
         image: weatherExtension
     },
@@ -219,7 +219,7 @@ export const projects = [
         }],
         links: {
             label: 'View Project',
-            link: 'https://kata-kuti.netlify.com'
+            value: 'https://kata-kuti.netlify.com'
         },
         image: kataKuti
 	},
@@ -241,7 +241,7 @@ export const projects = [
         }],
         links: {
             label: 'View Project',
-            link: 'https://vimeo.com/300492070'
+            value: 'https://vimeo.com/300492070'
         },
         image: bookStore
     },
@@ -260,7 +260,7 @@ export const projects = [
         }],
         links: {
             label: 'View Project',
-            link: 'https://github.com/himayand21/myProjects/blob/master/ToDoList.html'
+            value: 'https://github.com/himayand21/myProjects/blob/master/ToDoList.html'
         },
         image: todoList
     }
