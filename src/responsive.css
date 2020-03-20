@@ -78,11 +78,6 @@
     display: block;
   }
 }
-@media only screen and (max-height: 600px) {
-  .profile-pic {
-    margin-top: 30px;
-  }
-}
 
 @media only screen and (min-width: 910px) and (max-width: 1520px) {
   .my-description-wrapper {
@@ -112,11 +107,6 @@
   }
   .himayan {
     font-size: 20px;
-  }
-  .profile-pic {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
   }
   .my-profession {
     font-size: 20px;
