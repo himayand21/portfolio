@@ -1,4 +1,5 @@
 import React from "react";
+import {Image} from "./Image";
 
 export const Project = (props) => {
     const {
@@ -12,9 +13,7 @@ export const Project = (props) => {
         <div
             className="project-box"
         >
-            <div className="project-image">
-                <img data-src={image} alt="" className="lazy" />
-            </div>
+			<Image image={image} />
             <div className="project-content">
                 <div className="project-header">
                     <div className="project-title">{title}</div>

@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../../images/me.jpg";
 
 const Image = () => {
-  return (
-    <div
-      className="item"
-    >
-      <img
-        alt=""
-        className="profile-pic"
-        src={image}
-      />
-    </div>
-  );
+	const [loaded, setLoaded] = useState(false);
+	return (
+		<div
+			className="item"
+		>
+			<div className="profile-pic-wrapper">
+				<img
+					alt=""
+					className="profile-pic-no-display"
+					src={image}
+					style={{ display: "none" }}
+					onLoad={() => setLoaded(true)}
+				/>
+				{loaded ?
+					<img
+						alt=""
+						className="profile-pic"
+						src={image}
+						onLoad={() => setLoaded(true)}
+					/> : null}
+			</div>
+		</div>
+	);
 };
 
 export default Image;
