@@ -30,7 +30,6 @@ export const Contact = () => {
 						<div className="contact-desc">+91 9874 55 2467</div>
 					</div>
 					<div className="contact-details">
-						<div className="contact-desc">Join me on Social Media</div>
 						<ul className="social-media">
 							{socialMedia.map(each => (
 								<li key={each.link}>

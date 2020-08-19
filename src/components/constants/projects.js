@@ -112,6 +112,9 @@ export const projects = [
         }, {
             source: redux,
             label: 'Redux'
+        }, {
+            source: css,
+            label: 'CSS-3'
         }],
         links: {
             label: 'Visit Website',
@@ -134,6 +137,9 @@ export const projects = [
         }, {
             source: redux,
             label: 'Redux'
+        }, {
+            source: css,
+            label: 'CSS-3'
         }],
         links: {
             label: 'Visit Website',
@@ -178,6 +184,9 @@ export const projects = [
         }, {
             source: redux,
             label: 'Redux'
+        }, {
+            source: css,
+            label: 'CSS-3'
         }],
         links: {
             label: 'View Project',
@@ -193,7 +202,7 @@ export const projects = [
             label: 'React'
         }, {
             source: css,
-            label: 'Css-3'
+            label: 'CSS-3'
         }],
         links: {
             label: 'View Project',

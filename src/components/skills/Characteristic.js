@@ -7,7 +7,7 @@ export const Characteristic = props => {
             className="characteristic-box"
         >
             <div className="characteristic-image-container">
-                {icon}
+                <img src={icon} alt=""/>
             </div>
             <div className="characteristic-title">{title}</div>
             <div className="characteristic-subtitle">{subtitle}</div>

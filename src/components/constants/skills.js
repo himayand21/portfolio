@@ -9,6 +9,7 @@ import mongo from '../../images/skills/mongo.png';
 import node from '../../images/skills/node.png';
 import sass from '../../images/skills/sass.png';
 import firebase from '../../images/skills/firebase.png';
+import graphql from '../../images/skills/graphql.png';
 
 export const skills = [
     {
@@ -62,8 +63,14 @@ export const skills = [
     {
         label: 'Mongo DB',
         source: mongo,
-        rating: 3,
+        rating: 3.5,
         className: 'icon-mongo'
+    },
+    {
+        label: 'GraphQL',
+        source: graphql,
+        rating: 3.5,
+        className: 'icon-graphql'
     },
     {
         label: 'Webpack',

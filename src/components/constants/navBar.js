@@ -17,4 +17,4 @@ export const navList = [
     }
 ];
 
-export const navIds = navList.filter(each => each.link).map(each => each.link);
+export const navIds = navList.map(each => each.link);

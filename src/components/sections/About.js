@@ -13,7 +13,7 @@ export const About = () => {
         {aboutConstants.map((stage, index) => (
           <div
             key={'stage' + index}
-            className="life-stage"
+            className={`life-stage ${index === aboutConstants.length - 1 ? 'last-child' : ''}`}
           >
             <div
               className={
