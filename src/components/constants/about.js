@@ -1,12 +1,12 @@
 import React from 'react';
 
-import {Birthday, School, Student, Employee} from '../icons';
+import {Birthday, School, Student, Wipro, Snapwiz} from '../icons';
  
-const getExperience = () => {
-    const joiningDate = new Date('06/27/2018');
-    const today = new Date();
+const getExperience = (firstDate, lastDate) => {
+    const joiningDate = new Date(firstDate);
+    const today = lastDate ? new Date(lastDate) : new Date();
     const timeDifference = today.getTime() - joiningDate.getTime();
-    const noOfMonths = Math.floor(timeDifference / (1000 * 3600 * 24 * 30));
+    const noOfMonths = Math.ceil(timeDifference / (1000 * 3600 * 24 * 30));
     const noOfYears = Math.floor(noOfMonths / 12);
     const yearString = `year${noOfYears === 1 ? '' : 's'}`;
     const monthString = `month${noOfMonths === 1 ? '' : 's'}`;
@@ -41,8 +41,15 @@ export const aboutConstants = [
         description: [
             {label: "work", value: "Wipro Technologies"},
             {label: "designation", value: 'Project Engineer'},
-            {label: "experience", value: getExperience()}
+            {label: "experience", value: getExperience('06/27/2018', '04/14/2020')}
         ],
-        icon: <Employee />
+        icon: <Wipro />
+    },{
+        description: [
+            {label: "work", value: "Snapwiz Edutec Pvt Ltd"},
+            {label: "designation", value: 'Software Engineer'},
+            {label: "experience", value: getExperience('04/15/2020')}
+        ],
+        icon: <Snapwiz />
     }
 ]

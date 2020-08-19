@@ -91,6 +91,7 @@ nav ul {
 
 .project-image-loaded {
   opacity: 0;
+  transition: transform 0.2s ease-out;
   animation-name: fade-in;
   animation-direction: normal;
   animation-duration: 0.5s;
@@ -98,6 +99,11 @@ nav ul {
   animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.project-image-loaded:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .description-wrapper {
@@ -173,9 +179,8 @@ nav ul {
 .sections-container {
   width: 100vw;
   overflow: hidden;
-  will-change: margin-left, width;
-  transition: margin-left 0.5s ease-in-out, width 0.5s ease-in-out;
 }
+
 .intro {
   background: linear-gradient(150deg, #adadad 45%, #64485c 45%);
 }
@@ -201,7 +206,7 @@ nav ul {
 }
 
 .social-media a .icons {
-  padding: 3px 10px;
+  padding: 3px 7px;
   width: 20px;
   color: #836778 !important;
 }
@@ -219,7 +224,7 @@ nav {
   padding-left: 0px;
   display: flex;
   flex-direction: row;
-  margin: 10px 0 0 -10px;
+  margin: 10px 0 0 -7px;
 }
 
 .social-media a:hover .icons {
@@ -321,14 +326,14 @@ nav {
 }
 
 .navbar-closed nav {
-  left: -241px;
-  will-change: left;
-  transition: left 0.5s ease-in-out;
+  transform: translateX(-241px);
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
 }
 .navbar-open nav {
-  left: 0;
-  will-change: left;
-  transition: left 0.5s ease-in-out;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
 }
 
 .title {
@@ -341,7 +346,7 @@ nav {
 .life-stage {
   display: flex;
   flex-direction: row;
-  height: 250px;
+  height: 220px;
 }
 
 .life-desc {
@@ -356,8 +361,6 @@ nav {
   align-items: flex-end;
   border-right: 1px rgba(235, 235, 235, 0.5) solid;
   padding-right: 100px;
-  will-change: border-right;
-  transition: border-right 2s 0.5s ease-in-out;
 }
 
 .life-description-right {
@@ -367,8 +370,6 @@ nav {
   align-items: flex-start;
   border-left: 1px rgba(235, 235, 235, 0.5) solid;
   padding-left: 100px;
-  will-change: border-left;
-  transition: border-left 2s 0.5s ease-in-out;
 }
 
 .life-icons {
@@ -376,8 +377,6 @@ nav {
   left: calc(50% - 75px);
   width: 150px;
   height: 150px;
-  will-change: left;
-  transition: left 0.5s ease-in-out;
 }
 
 .icon-img {
@@ -392,15 +391,16 @@ nav {
   box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.75);
 }
 
-.life-stage:last-child .life-description-right {
+.life-stage:last-child .life-desc {
   border-left: solid 0px transparent;
+  border-right: solid 0px transparent;
 }
 
 .life-icons:first-child {
   margin-top: 0;
 }
 .description-container {
-  height: 150px;
+  height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -462,8 +462,10 @@ nav {
 .characteristics-container {
   box-sizing: content-box;
   background: rgb(240, 240, 240);
-  width: calc(100% + 40px);
+  width: calc(100% - 20px);
   padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: -20px;
   margin-top: -20px;
   margin-bottom: 60px;
@@ -504,10 +506,6 @@ nav {
   width: 70px;
   margin-bottom: 10px;
   overflow: hidden;
-}
-
-.skill-image-container .skill-image:first-child {
-  filter: grayscale(100%);
 }
 
 .skill-image.icon-sass {

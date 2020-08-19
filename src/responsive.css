@@ -114,6 +114,11 @@
 }
 
 @media only screen and (min-width: 625px) and (max-width: 1000px) {
+  .characteristics-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: calc(100% + 40px);
+  }
   .characteristic-box {
     flex-basis: 250px;
     padding-right: 20px;
@@ -126,6 +131,11 @@
 }
 
 @media only screen and (max-width: 624px) {
+  .characteristics-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: calc(100% + 40px);
+  }
   .characteristic-box {
     padding-right: 20px;
     padding-left: 20px;
@@ -211,22 +221,4 @@
   .contact-icon-wrapper {
     display: none;
   }
-}
-
-@media only screen and (min-width: 1361px) {
-	.navbar-open ~ .sections-container {
-		margin-left: 241px;
-		width: calc(100vw - 241px);
-		transition: margin-left 0.5s ease-in-out, width 0.5s ease-in-out;
-	}
-	.navbar-open ~ .sections-container .project-box {
-		width: 32%;
-	}
-	.navbar-open ~ .sections-container .project-box .project-image {
-		height: calc((100vw - 241px) / 5);
-	}
-	.navbar-open ~ .sections-container .life-icons {
-		left: calc(50% + 45px);
-		transition: left 0.5s ease-in-out;
-	}
 }

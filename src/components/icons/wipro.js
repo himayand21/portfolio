@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Employee = () => {
+export const Wipro = () => {
     return (
         <svg x="0px" y="0px"
             width="100" height="100"
