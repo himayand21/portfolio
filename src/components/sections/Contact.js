@@ -1,5 +1,5 @@
 import React from "react";
-import { Email } from '../contact'
+import email from "../../images/icons/email.svg";
 import { socialMedia } from '../constants';
 
 export const Contact = () => {
@@ -13,7 +13,7 @@ export const Contact = () => {
 			<div className="skills-wrapper">
 				<div className="contacts-wrapper">
 					<div className="contact-icon-wrapper">
-						<Email />
+						<img src={email} alt="" />
 					</div>
 					<div className="contact-title">
 						Stay in touch !

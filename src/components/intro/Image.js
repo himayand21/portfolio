@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../../images/me.jpg";
+import image from "../../images/me2.jpeg";
 
 const Image = () => {
 	const [loaded, setLoaded] = useState(false);

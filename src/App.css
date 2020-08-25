@@ -208,7 +208,6 @@ nav ul {
 .social-media a .icons {
   padding: 3px 7px;
   width: 20px;
-  color: #836778 !important;
 }
 
 nav ul {
@@ -218,11 +217,34 @@ nav ul {
 nav {
   overflow: scroll;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.nav-footer div {
+  text-align: center;
+  font-size: 14px;
+}
+
+.nav-footer .nav-footer-bold {
+  margin: 10px 0 20px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .social-media {
   padding-left: 0px;
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin: 10px 0 0 -7px;
 }

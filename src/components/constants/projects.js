@@ -9,6 +9,7 @@ import mongo from '../../images/skills/mongo.png';
 import node from '../../images/skills/node.png';
 import sass from '../../images/skills/sass.png';
 import firebase from '../../images/skills/firebase.png';
+import graphql from '../../images/skills/graphql.png';
 
 import weconnect from '../../images/projects/weconnect.jpg';
 import createWebpack from '../../images/projects/createWebpack.jpg';
@@ -22,8 +23,34 @@ import todoList from '../../images/projects/todoList.jpg';
 import kataKuti from '../../images/projects/katakuti.jpg';
 import covid19 from '../../images/projects/covid19.jpg';
 import nodeReactAuth from '../../images/projects/nodeReactAuth.jpg';
+import blackboard from '../../images/projects/blackboard.jpg';
 
 export const projects = [
+    {
+        title: 'Blackboard',
+        image: blackboard,
+        subtitle: `Blackboard is a note-keeping application and more. It helps you pen down your thoughts using a rich text editor. Be it a task-list or a class essay, it's editor can cater to all your needs seamlessly. Every note is assigned to a board for easy access. Features include pinning, sharing and even commenting on notes.`,
+        links: {
+            label: 'Visit Website',
+            value: 'https://black-board.netlify.app'
+        },
+        skills: [{
+            source: react,
+            label: 'React'
+        }, {
+            source: sass,
+            label: 'Sass'
+        }, {
+            source: graphql,
+            label: 'GraphQL'
+        }, {
+            source: mongo,
+            label: 'MongoDB'
+        }, {
+            source: node,
+            label: 'NodeJS'
+        }]
+    },
     {
         title: 'WeConnect',
         subtitle: `A texting application where the user can find his friends and connect with them via friend requests. Primary features include - forward, reply, delete messages, sending images and user profile.`,

@@ -13,7 +13,9 @@ export const Project = (props) => {
         <div
             className="project-box"
         >
-			<Image image={image} />
+            <a target="_tab" href={links.value}>
+			    <Image image={image} />
+            </a>
             <div className="project-content">
                 <div className="project-header">
                     <div className="project-title">{title}</div>

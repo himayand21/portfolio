@@ -1,6 +1,10 @@
 import React from 'react';
 
-import {Birthday, School, Student, Wipro, Snapwiz} from '../icons';
+import birthday from '../../images/icons/birthday.svg';
+import school from '../../images/icons/school.svg';
+import student from '../../images/icons/student.svg';
+import wipro from '../../images/icons/wipro.svg';
+import snapwiz from '../../images/icons/snapwiz.svg';
  
 const getExperience = (firstDate, lastDate) => {
     const joiningDate = new Date(firstDate);
@@ -22,34 +26,34 @@ export const aboutConstants = [
             {label: "home", value: "Kolkata, West Bengal"},
             {label: "languages", value: "Bengali, English and Hindi"}
         ],
-        icon: <Birthday />
+        icon: <img src={birthday} className="icon-img" alt="" />
     },{
         description: [
             {label: "school", value: "Nava Nalanda"},
             {label: "X-th", value: "90.85%"},
             {label: "XII-th", value: "92%"}
         ],
-        icon: <School />
+        icon: <img src={school} className="icon-img" alt="" />
     },{
         description: [
             {label: "college", value: "Vellore Institute of Technology"},
             {label: "stream", value: 'EIE'},
             {label: "CGPA", value: "9.04"}
         ],
-        icon: <Student />
+        icon: <img src={student} className="icon-img" alt="" />
     },{
         description: [
             {label: "work", value: "Wipro Technologies"},
             {label: "designation", value: 'Project Engineer'},
             {label: "experience", value: getExperience('06/27/2018', '04/14/2020')}
         ],
-        icon: <Wipro />
+        icon: <img src={wipro} className="icon-img" alt="" />
     },{
         description: [
             {label: "work", value: "Snapwiz Edutec Pvt Ltd"},
             {label: "designation", value: 'Software Engineer'},
             {label: "experience", value: getExperience('04/15/2020')}
         ],
-        icon: <Snapwiz />
+        icon: <img src={snapwiz} className="icon-img" alt="" />
     }
 ]
