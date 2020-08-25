@@ -2,9 +2,7 @@ import React from "react";
 
 const goToProjects = () => {
   const element = document.getElementById('projects');
-  window.scrollTo({
-    top: element.offsetTop
-  });
+  element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 }
 
 const ViewButton = () => {

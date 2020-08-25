@@ -1,7 +1,7 @@
-import fast from '../icons/fast.svg';
-import functional from '../icons/functional.svg';
-import responsive from '../icons/responsive.svg';
-import easytouse from '../icons/easyToUse.svg';
+import fast from '../../images/icons/fast.svg';
+import functional from '../../images/icons/functional.svg';
+import responsive from '../../images/icons/responsive.svg';
+import easytouse from '../../images/icons/easyToUse.svg';
 
 export const characteristics = [
     {

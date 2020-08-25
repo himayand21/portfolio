@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Resume } from "./icons";
+import resume from '../images/icons/resume.svg';
 import { navList, navIds } from "./constants";
 
 import up from '../images/icons/up.svg';
@@ -7,28 +7,24 @@ import bars from '../images/icons/bars.svg';
 
 const goToSection = sectionID => {
   const element = document.getElementById(sectionID);
-  window.scrollTo({
-    top: element.offsetTop + 10
-  });
+  element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 };
 
 export const NavBar = props => {
   const [currentSection, setCurrentSection] = useState("home");
-  const [scrollY, setScrollY] = useState(window.scrollY);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScrollY(window.scrollY);
-    });
-    window.addEventListener("resize", () => {
-      setScrollY(window.scrollY);
-    });
+    window.addEventListener("scroll", fireOnScroll);
+    window.addEventListener("resize", fireOnScroll);
   }, []);
-  useEffect(() => {
+
+  const fireOnScroll = () => {
+    const scrollY = window.scrollY;
     const offsetList = navIds.map(navId => {
       const element = document.getElementById(navId);
       return {
         navId,
-        offset: element.offsetTop - 10
+        offset: element.offsetTop - (window.innerHeight / 3)
       };
     });
     if (offsetList.length) {
@@ -38,7 +34,7 @@ export const NavBar = props => {
       }, "home");
       setCurrentSection(current);
     }
-  }, [scrollY]);
+  };
 
   const className = currentSection === "home" ? "arrow-hide" : "arrow-show";
 
@@ -61,12 +57,12 @@ export const NavBar = props => {
       <div className={props.navShow ? "navbar-open" : "navbar-closed"}>
         <nav>
           <div className="nav-img">
-            <Resume />
+            <img src={resume} alt="" />
           </div>
           <ul className="navlist-wrapper">
             {navList.map(navItem => (
               <li
-			  	key={navItem.label}
+                key={navItem.label}
                 id="nav-link"
                 onClick={() => goToSection(navItem.link)}
                 className={currentSection === navItem.link ? "current-nav" : ""}
@@ -75,6 +71,10 @@ export const NavBar = props => {
               </li>
             ))}
           </ul>
+          <div className="nav-footer">
+            <div>This page is about to go through some major design upgrades in the next few weeks.</div>
+            <div className="nav-footer-bold">Stay tuned.</div>
+          </div>
         </nav>
       </div>
     </React.Fragment>
