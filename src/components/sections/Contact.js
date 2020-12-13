@@ -26,10 +26,6 @@ export const Contact = () => {
 						<div className="contact-desc">himayand21@gmail.com</div>
 					</div>
 					<div className="contact-details">
-						<div className="contact-label">phone</div>
-						<div className="contact-desc">+91 9874 55 2467</div>
-					</div>
-					<div className="contact-details">
 						<ul className="social-media">
 							{socialMedia.map(each => (
 								<li key={each.link}>
